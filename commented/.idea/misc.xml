@@ -1,0 +1,23 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/codin/Documents/Proyectos/Aplicacion Galaxy/AplicacionGalaxyConComentarios/app/src/main/res/layout/activity_main.xml" value="0.5409153952843273" />
+        <entry key="..\:/Users/codin/Documents/Proyectos/AplicacionGalaxy/app/src/main/res/drawable/ic_baseline_backspace_24.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/codin/Documents/Proyectos/AplicacionGalaxy/app/src/main/res/drawable/ic_baseline_help_24.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/codin/Documents/Proyectos/AplicacionGalaxy/app/src/main/res/drawable/ic_baseline_help_24rojo.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/codin/Documents/Proyectos/AplicacionGalaxy/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.10833333333333334" />
+        <entry key="..\:/Users/codin/Documents/Proyectos/AplicacionGalaxy/app/src/main/res/layout-v26/activity_main.xml" value="0.203125" />
+        <entry key="..\:/Users/codin/Documents/Proyectos/AplicacionGalaxy/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/codin/Documents/Proyectos/AplicacionGalaxy/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121875" />
+        <entry key="..\:/Users/codin/Documents/Proyectos/AplicacionGalaxy/app/src/main/res/mipmap-anydpi-v26/mk7_round.xml" value="0.20185185185185187" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Conversor Galaxy</string>
+    <string name="line_jump">\n</string>
+    <string name="zoneNumberHint">Escribe el número de zona</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_0">0</string>
+    <string name="_4">4</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="classic">Classic</string>
+    <string name="g2">G2</string>
+    <string name="Dimension">Dimension</string>
+    <string name="borrar">Borrar</string>
+    <string name="x">x</string>
+    <string name="fail_message">No existe una zona con esa numeración.</string>
+    <string name="classic_start">Classic:\ </string>
+    <string name="classic_end">\ - classic:\ </string>
+    <string name="g2_end">\ - g2:\ </string>
+    <string name="Dimension_end">\ - Dimension:\ </string>
+    <string name="microtech_start">Microtech:\ </string>
+    <string name="microtech_end">; microtech:\ </string>
+    <string name="E">Enviar</string>
+    <string name="B">Borrar</string>
+    <string name="send_delete">Enviar / Borrar</string>
+    <string name="borrar_enviar">Borrar / Enviar</string>
+    <string name="borrar_corto">B</string>
+    <string name="Info">Desarrollado por Javier Fidalgo.</string>
+    <string name="list">Lista</string>
+    <string name="zone_already_checked">Zona ya introducida.</string>
+    <string name="hint_for_listCheck_true">Se ordenarán las zona introducidas, y se reportará cualquier coincidencia.</string>
+    <string name="hint_for_listCheck_false">Reporte y orden de zonas detenido.</string>
+    <string name="help">\ \?\ </string>
+    <string name="helpText">help</string>
+    <string name="helpTextWindow">Conversor de zonas para la central de alarmas Honeywell Galaxy.
+        \n\n- Seleccionando el tipo de central e introduciendo el número de zona, el sistema
+        imprimirá la conversión al valor buscado atendiendo al orden de zona introducido.
+        \n- Seleccionando la opción "Lista", el sistema recogerá las zonas introducidas por el
+        usuario, las ordenará de forma numérica segun el tipo de central e imprimirá los resultados.
+        Si la zona enviada por el usuario ya fue introducida con anterioridad, el sistema reportará la coincidencia.
+        \n- Presionando el botón \"Enviar / Borrar\", se invertirá el orden de dichos botones para
+        mayor comodidad de usuarios zurdos y diestros.
+        \n\nDesarrollado por Javier Fidalgo Rodríguez.</string>
+</resources>
