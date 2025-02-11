@@ -1,1 +1,10 @@
-Documentación por agregar.
+# Introducción
+
+Hubo un momento en el pasado en el que tuve que trabajar con las central de alarmas de intrusión _Galaxy Dimension_, de la marca _HoneyWell_. El tiempo ha hecho que se me hayan olvidado ciertos conceptos e información de la misma, pues hace tiempo que ya no trabajo con estos equipos, pero aquí va el origen de esta aplicación.
+
+Esta aplicación surge de la necesidad de mejorar el rendimiento de trabajo para hacer más liviana una actividad laboral específica. Cuando se trabaja con este tipo de sistemas, amenudo están conectados a una empresa de seguridad privada, que supervisa las señales de la misma. Probar el correcto funcionamiento de la central puede resultar confuso cuando se trata de verificar si un un sensor concreto del sistema ha enviado su señal al centro de recepción de señales de la empresa de seguridad. Esto es debido a que la central de alarmas le asigna una identificación basada en un número, al que le puedes agregar un nombre, y el sistema de visualización de señales en directo de la empresa de seguridad le asigna otro número diferente al mismo dispositivo. Cuando revisas las señales que llegan a tu herramienta de trabajo, (móvil, tablet), las visualizas con la numeración que le da el sistema de la empresa de seguridad privada, y para poder verificar que dicha señal recibida corresponde al sensor que estás probando, necesitas una tabla de conversión que te muestre a qué numeración de la central de alarmas corresponde la numeración de la señal recibida en el software de la empresa. Esto genera una demora del trabajo notable cuando se están comprobando todos los sensores de un sistema completo, pues esa tabla se nos facilitaba en formato PDF. La situación más común era que, tras haber hecho saltar todos los sensores del sistema, tu compañero y tú os sentabais y mientras uno iba leyendo el histórico de señales, el otro iba marcando como "Probado" cada uno de los sensores en un excel, tras haber consultado la tabla.
+
+* Ha saltado el sensor número 125.
+* Se comprueba en la tabla la numeración del sensor 125 en la central de alarmas, que corrsponde con la zona 1135.
+* Se comprueba en el Excel de información del cliente si ya se marcó como _Probada_ dicha zona.
+* Se pasa al siguiente sensor en el histórico de señales.
