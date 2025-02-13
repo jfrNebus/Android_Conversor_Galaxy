@@ -22,8 +22,42 @@ Estas dos situaciones, a mi parecer, eran un sin sentido. En ese momento pensé 
 
 <br>
 
-Vamos a empezar entendiendo cómo nombra la central de alarmas sus zonas. La central tiene clemas de conexión para 16 zonas, es decir, puedes conectar a la central 16 sensores. Si se necesitan más sensores se han de agragar ríos y placas expansoras. Se denomina río a la conexión por bus de diferentes elementos que envían y/o reciben información. Una plca expansora, una placa que te permite agregar X número de sensores, se comunica con la central a través de un río, un bus de comunicaciones, en este caso del tipo RS-485. Esta situación genera que, si necesitas 26 zonas en una central de tipo _Galaxy Classic_, (más adelante veremos los tipos de centrales Galaxy con las que se trabaja), vas a necesitar la central y un total de 2 expansores.
+Vamos a empezar entendiendo cómo nombra la central de alarmas sus zonas. La central tiene clemas de conexión para 16 zonas, es decir, puedes conectar a la central 16 sensores. Si se necesitan más sensores se han de agragar ríos y placas expansoras. Se denomina río a la conexión por bus de datos de diferentes elementos que envían y/o reciben información. Una plca expansora, una placa que te permite ampliar X número de sensores, se comunica con la central a través de un río, un bus de comunicaciones, en este caso del tipo RS-485. Esta situación genera que, si necesitas 26 zonas en una central de tipo _Galaxy Classic_, (más adelante veremos los tipos de centrales Galaxy con las que se trabaja), vas a necesitar la central y un total de 2 expansores.
 
-Cada expansor permite agregar un total de 8 zonas. Si a las 26 zonas del ejemplo anterior le restamos las 16 que permite agregar la propia central, nos quedan 10 zonas, por eso se necesitan 2 expansores. Se acomodan 8 de esas 10 zonas en un expansor, y las 2 últimas en el segundo.
+Cada expansor permite agregar un total de 8 zonas. Si al total de 26 zonas del ejemplo anterior, le restamos las 16 que permite agregar la propia central usando el primer bus, nos quedan 10 zonas, por eso se necesitan 2 expansores. Se acomodan 8 de esas 10 zonas en un expansor, y las 2 últimas en el segundo. Cada bus puede contar con un total de 16 conjuntos de 8 zonas, lo que da un total de 128 zonas por bus. Por último, cada central puede contar, según el modelo, con un total de 4 buses. Esto hace posible que se puedan llegar a tener 512 sensores en una instalación. 
+
+Conocer cómo se estructura la arquitectura de conexiones de la central es de vital importancia a la hora de detectar averías, probar el sistema etc. Si tienes una avería en el río 10 del bus 4, y sabes que el bus 4 se encuentra en el lado norte de la instalación, será mucho más fácil localizar las placas relacionadas con la incidencia, especialmente si es la primera vez que acudes a la instalación.
+
+Explicado todo esto, destaca muchisimo lo acertadamente que plasma toda esta información la central en los números identificadores de las zonas. Voy a estender algunos ejemplos y va a quedar completamente claro.
 
 
+
+Zona 2036:
+* Bus: 2
+* Expansor: 03 -> Empezamos a contar desde cero, luego el expansor 00 sería el primer expansor del bus, el expansor 01 sería el segundo, el 02 sería el tercero, y el 03 sería el cuarto.
+* Número de zona: 6 -> Esto quiere decir que se trata del cuarto sensor del expansor.
+
+Resumen: Estamos hablando del sexto sensor, del cuarto expansor, del segundo bus de la central.
+
+Zona 1014:
+* Bus: 1
+* Expansor: 01 -> Cómo se ha indicado, la placa de la central tiene conexiones para las primeras 16 zonas del bus número 1. Luego, las zonas 1 a 8 forman el primer "expansor" built-in en la placa de la central, el expansor 00. Las siguientes 8 zonas forman el 
+ segundo "expansor", el 01.
+* Número de zona: 4 -> Cuarto sensor del expansor.
+
+Resumen: Cuarto sensor, del segundo expansor, del primer bus de la central.
+
+Zona 3138:
+* Bus: 3
+* Expansor: 13 -> Expansor físico número 14, expansor lógico número 13.
+* Zona 8:
+
+Resumen: Octavo sensor, del expansor número 14 (contándolos físicamente), del bus 3.
+
+
+Visualmente:
+
+<p align="center">
+ <img src="Docs/pics/asci_architecture.png"/> 
+</p>
+ 
