@@ -662,7 +662,7 @@ public class MainActivity extends AppCompatActivity {
                 succeed = false;
             }
             /* After first conditional system will perform an specific formula according to the
-            range where i is. We know that system adds to the number of zone the amount
+            range of i. We know that system adds to the number of zone the amount
             of times that 2 numbers were missed when the galaxy system numbers zones, multiplied
             by 2, when converting from normal to microtech, (check galaxyZones() explanations).
             In this kind of conversion, what it is also done is to subtract 128 * n, where n is
