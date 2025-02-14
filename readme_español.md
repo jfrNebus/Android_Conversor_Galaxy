@@ -60,4 +60,27 @@ Visualmente:
 <p align="center">
  <img src="Docs/pics/asci_architecture.png"/> 
 </p>
+
+La tabla de conversión facilita la conversión para tres modelos de central. Actualmente, dado que hace tiempo que ya no trabajo con ese tipo de equipos, desconozco si solo existen esos tres modelos de central Galaxy o si existen más y solo usabamos esos tres. Cada modelo presenta sus peculiaridades en cuanto a como se enumeran las zonas:
+
+* CLASSIC: Ofrece la posibilidad de conectar hasta 512 sensores. Nombra los sensores de la forma en la que se ha explicado anteriormente.
+* G2: Solo pueden conectarse 44 sensores. Nombra las zonas del 1 al 4 como se ha explicado anteriormente, del 1001 al 1004. A partir de la quinta zona se da un salto hasta la 1011. De esta forma, la sexta zona será nombrada como 1012, la septima como 1013, y así hasta la zona 12 que se nombra como 1018. De ahí, siguiendo la explicación, la zona 13 se nombrará como 1021, y se seguirá la lógica de nombramiento hasta la última zona posible de la central, la 44, que será la 1058.
+* G3 / Dimension: Ofrece la posibilidad de conectar hasta 512 sensores. Enumera las zonas de forma normal hasta la número 16, es decir, la zona 1018. La zona 1021 que correspondería a la zona 17, en esta central corresponde a la zona 33, y se sigue contando desde ahí. La zona 1022 que correspondería a la zona 18, ahora pasa a corresponder a la zona 34, y de ahí en adelante. De esta forma, en esta central no existen sensores nombrados con la numeración ordinaria del 17 al 32.
+
+Todo esto queda mejor explicado en la propia documentación del código.
  
+<br>
+<br>
+
+## Aplicación 🧰
+
+<br>
+
+<p align="center">
+ <img src="Docs/pics/playstore1.jpg" width="307" height="640"/> 
+ <img src="Docs/pics/playstore2.jpg" width="307" height="640"/> 
+ <img src="Docs/pics/playstore3.jpg" width="307" height="640"/> 
+</p>
+
+<br>
+
