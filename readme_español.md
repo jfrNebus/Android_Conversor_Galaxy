@@ -84,3 +84,10 @@ Todo esto queda mejor explicado en la propia documentación del código.
 
 <br>
 
+Como se puede observar, la interfaz de usuario es bien sencilla, aun tengo trabajo por delante en relación al tema de diseño. Lo único que busqué activamente era que la gama de colores empleada fuese agradable. Que no hubisen altos contrastes como por ejemplo texto de color negro sobre fondo blanco, lo cual puede ser molesto para usuarios que padecen ciertos desordenes oculares. Estoy seguro de que habrá gente con daltonismo a la que los colores elegidos les supondrá un problema. Supongo que en un futuro revisaré este campo.
+
+Usar la aplicación es muy sencillo. La idea principal es introducir el número de zona en cualquier formato y que la aplicación te de la conversión en función del tipo de central seleccionada mediante los check boxes del area superior. Si introduces un número de sensor según la numeración que le ha asignado la central, la aplicación entiende que buscas conocer la numeración normal, y viceversa.
+
+Los check boxes sirven para que el cálculo de zona respete las peculiaridades de cada centra, pues como se ha explicado anteriormente, no cuentan de la misma manera.
+
+La opción _Lista_ sirve para que la aplicación ordene en el histórico las zonas introducidas de forma descendente. Esto resulta útil si es necesario copiar el histórico para ser reportado. Adicionalmente, cuando esta opción esté seleccionada no se podrán introducir valores duplicados. Se reportará un mensaje indicando que el número de sensor ya fue introducido. De esta forma se solventa la situación no deseada, descrita anteriormente, relacionada con el chequeo de zonas introducidas cuando se trabaja.
