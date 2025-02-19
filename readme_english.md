@@ -2,16 +2,26 @@ Documentation to be translated.
 
 # Introduction
 
-Few years ago I had to work with the alarm systems _Galaxy Dimension_ from _HoneyWell_. It's been quite long since I used to work with them and I might have forgotten some of its specs, but here it goes the reassons for me to make this app.
+Few years ago I had to work with the type alarm systems _Galaxy Dimension_ from _HoneyWell_. It's been quite long since I used to work with them and I might have forgotten some of its specs, but here it goes the reassons for me to make this app.
 
-This app is meant to improve the work performance. Usually, this type of systems are connected to a private security company that monitors the signals sent by the system. The process of checking the system can be confusing when you are trying to know if the sensors bound to the system are sending their sisgnals to the security company. It is because of the way the system assigns an ID to each sensor. The system assigns a number, while the operator can assign a name, to each sensor, and the software to see live signals that the security company provides to the operator assings a different ID to the same device. When the operator reads the log in the app provided by the company to check if the sensor sent his signal, the sensor is identified witht
+This app is meant to improve the work performance. Usually, this type of systems are connected to a private security company that monitors the signals sent by the system. The process of checking the system can be confusing when you are trying to know if the sensors bound to the system are sending their sisgnals to the security company. It is because of the way the system assigns an ID to each sensor. The system assigns a number, while the operator can assign a name, to each sensor, and the software to see live signals provided by the security company to the operator assings a different ID to the same device. This leads to situations where it is hard to track which ID belongs to each device.
 
-Cuando revisas las señales que llegan a tu herramienta de trabajo, (móvil, tablet), las visualizas con la numeración que le da el sistema de la empresa de seguridad privada, y para poder verificar que dicha señal recibida corresponde al sensor que estás probando, necesitas una tabla de conversión que te muestre a qué numeración de la central de alarmas corresponde la numeración de la señal recibida en el software de la empresa. Esto genera una demora del trabajo notable cuando se están comprobando todos los sensores de un sistema completo, pues esa tabla se nos facilita en un archivo de texto sobre el que tienes que hacer scroll de forma constante. La situación más común era que, tras haber hecho saltar todos los sensores del sistema, tu compañero y tú os sentabais y mientras uno iba leyendo el histórico de señales, el otro iba marcando como "Probado" cada uno de los sensores en un excel, tras haber consultado la tabla.
+The security company provides a conversion table to track each sensor. This way, the operator can get the ID set by the company to the device tested, or to know the ID set by the alarm system to know which device produced a signal in the log. The main problem is that this process slows down heavily the work activity since the operator has to scroll down / up the table to find each device. This process takes a lot of time when the whole system is being tested.
 
-* Ha saltado el sensor número 125.
-* Se comprueba en la tabla la numeración del sensor 125 en la central de alarmas, que corrsponde con la zona 1135.
-* Se comprueba en el Excel de información del cliente si ya se marcó como _Probada_ dicha zona.
-* Se pasa al siguiente sensor en el histórico de señales.
+Usually, each system is tested by two operators. Once the whole testing process is over, one of the operators check the log of signals while the other one checks the list of sensors in the company documentation, marking as "Tested" those sensor which where tested with positive result.
+
+* The sensor with the ID 125 is in the log.
+* The sensor 125 is being checked in the conversion table, and the operator reads that the ID 125 belongs to the device numbered by the system with the ID 1135.
+* The operator checks, in the documentation provided by the company, whether the sensor with the ID 1135 has already been tested or not, and it sets its state in the documentation.
+* The process starts again with a new singal in the log. 
+
+This whole way of working leads to time looses. What happens if both operators are not alone in the building? there will be devices triggered more than once sice some other persons will trigger the sensors in the most populated areas. This will fill the log with multiple iterations of the same signals. When the log is being checked, the operator reading the log will usually ask the operator checking the documentation 
+
+
+
+
+
+
 
 Esta dinámica de trabajo genera un inconveniente notable. ¿Qué pasa si tu compañero y tú no estáis solos en la instalación mientras probáis todo el sistema? ocurrirá que habrá sensores que se activen más de una vez debido al paso del personal de la instalación, o de los clientes que acuden a dicha instalación. Esto hace que el historial de señales se sature de los reportes de aquellos sensores que estén en las zonas más transitadas de la instalación. En este caso, cuando se está revisando todo el historial y anotando los sensores probados con éxito, la frase más recurrente es "¿te he dicho ya la zona X?" donde X es el número de un sensor, (se denomina zona a cada uno de los sensores del sistema). Esto te obliga a perder tiempo revisando el documento para saber si ya le clasificaste como _probada_, porque es posible que no lo recuerdes si la instalación tiene muchos sensores.
 
