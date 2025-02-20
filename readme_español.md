@@ -35,7 +35,7 @@ Explicado todo esto, destaca muchisimo lo acertadamente que plasma toda esta inf
 Zona 2036:
 * Bus: 2
 * Expansor: 03 -> Empezamos a contar desde cero, luego el expansor 00 sería el primer expansor del bus, el expansor 01 sería el segundo, el 02 sería el tercero, y el 03 sería el cuarto.
-* Número de zona: 6 -> Esto quiere decir que se trata del cuarto sensor del expansor.
+* Número de zona: 6 -> Esto quiere decir que se trata del sexto sensor del expansor.
 
 Resumen: Estamos hablando del sexto sensor, del cuarto expansor, del segundo bus de la central.
 
@@ -50,7 +50,7 @@ Resumen: Cuarto sensor, del segundo expansor, del primer bus de la central.
 Zona 3138:
 * Bus: 3
 * Expansor: 13 -> Expansor físico número 14, expansor lógico número 13.
-* Zona 8:
+* Numero de zona: Octavo sensor de expansor.
 
 Resumen: Octavo sensor, del expansor número 14 (contándolos físicamente), del bus 3.
 
