@@ -34,31 +34,28 @@ Each expansion board allows to add 8 sensors to the system. Therefor, in order t
 
 It is really important to know how the architecture of the system works in order to locate breakdowns, test system etc. If the system reports a fault in the expansion board 4 in the first bus, and you know that the first bus is located all over the west side of the area to protect, it is easier to identify and fix the problem, especially if it is your first time in the area.
 
-It is 
-
-Explicado todo esto, destaca muchisimo lo acertadamente que plasma toda esta información la central en los números identificadores de las zonas. Voy a estender algunos ejemplos y va a quedar completamente claro.
+The system numbers the sensor in a way that it is really helpful for the operator to know all the information related to a sensor. Below there are some examples:
 
 
-
-Zona 2036:
+Sensor 2036:
 * Bus: 2
-* Expansor: 03 -> Empezamos a contar desde cero, luego el expansor 00 sería el primer expansor del bus, el expansor 01 sería el segundo, el 02 sería el tercero, y el 03 sería el cuarto.
-* Número de zona: 6 -> Esto quiere decir que se trata del cuarto sensor del expansor.
+* Expansion board: 03 -> Empezamos a contar desde cero, luego el expansor 00 sería el primer expansor del bus, el expansor 01 sería el segundo, el 02 sería el tercero, y el 03 sería el cuarto.
+* Number of sensor: 6 -> Esto quiere decir que se trata del cuarto sensor del expansor.
 
 Resumen: Estamos hablando del sexto sensor, del cuarto expansor, del segundo bus de la central.
 
-Zona 1014:
+Sensor 1014:
 * Bus: 1
-* Expansor: 01 -> Cómo se ha indicado, la placa de la central tiene conexiones para las primeras 16 zonas del bus número 1. Luego, las zonas 1 a 8 forman el primer "expansor" built-in en la placa de la central, el expansor 00. Las siguientes 8 zonas forman el 
+* Expansion board: 01 -> Cómo se ha indicado, la placa de la central tiene conexiones para las primeras 16 zonas del bus número 1. Luego, las zonas 1 a 8 forman el primer "expansor" built-in en la placa de la central, el expansor 00. Las siguientes 8 zonas forman el 
  segundo "expansor", el 01.
-* Número de zona: 4 -> Cuarto sensor del expansor.
+* Number of sensor: 4 -> Cuarto sensor del expansor.
 
 Resumen: Cuarto sensor, del segundo expansor, del primer bus de la central.
 
-Zona 3138:
+Sensor 3138:
 * Bus: 3
-* Expansor: 13 -> Expansor físico número 14, expansor lógico número 13.
-* Zona 8:
+* Expansion board: 13 -> Expansor físico número 14, expansor lógico número 13.
+* Number of sensor 8:
 
 Resumen: Octavo sensor, del expansor número 14 (contándolos físicamente), del bus 3.
 
