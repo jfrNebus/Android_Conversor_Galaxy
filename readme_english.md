@@ -39,28 +39,27 @@ The system numbers the sensor in a way that it is really helpful for the operato
 
 Sensor 2036:
 * Bus: 2
-* Expansion board: 03 -> Empezamos a contar desde cero, luego el expansor 00 sería el primer expansor del bus, el expansor 01 sería el segundo, el 02 sería el tercero, y el 03 sería el cuarto.
-* Number of sensor: 6 -> Esto quiere decir que se trata del cuarto sensor del expansor.
+* Expansion board: 03 -> The count starts at 0. The first expansion board is the numer 00, the second expansion board is the number 01, the third one is the numer 02, the forth one is the numer 03.
+* Number of sensor: 6 -> The sixth sensor of the expansion board.
 
-Resumen: Estamos hablando del sexto sensor, del cuarto expansor, del segundo bus de la central.
+Summary: Sixth sensor in the forth expansor board, in the second bus.
 
 Sensor 1014:
 * Bus: 1
-* Expansion board: 01 -> Cómo se ha indicado, la placa de la central tiene conexiones para las primeras 16 zonas del bus número 1. Luego, las zonas 1 a 8 forman el primer "expansor" built-in en la placa de la central, el expansor 00. Las siguientes 8 zonas forman el 
- segundo "expansor", el 01.
-* Number of sensor: 4 -> Cuarto sensor del expansor.
+* Expansion board: 01 -> As it's been explained, the system board has screwed connectors for the first 16 sensors hosted by the bus number 1. Therefore the first 8 sensors belong to the first built-in "expansor board" in the system, the expansion board number 00. The next 8 sensors, sensor 9 to sensor 16, belong to the second built-in "expansor board" in the system, the number 01.
+* Number of sensor: 4 -> The forth sensor of the expansion board.
 
-Resumen: Cuarto sensor, del segundo expansor, del primer bus de la central.
+Summary: Forth sensor in the second expansor, in the first bus.
 
 Sensor 3138:
 * Bus: 3
-* Expansion board: 13 -> Expansor físico número 14, expansor lógico número 13.
-* Number of sensor 8:
+* Expansion board: 13 -> Physical expansor board number 14, logical expansor number 13.
+* Number of sensor 8: -> The eighth sensor of the expansion board.
 
-Resumen: Octavo sensor, del expansor número 14 (contándolos físicamente), del bus 3.
+Summary: Eighth sensor in the expansion board number 14, (physical count), in the third bus.
 
 
-Visualmente:
+View:
 
 <p align="center">
  <img src="Docs/pics/asci_architecture.png"/> 
