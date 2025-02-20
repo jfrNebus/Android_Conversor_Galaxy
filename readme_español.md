@@ -58,7 +58,7 @@ Resumen: Octavo sensor, del expansor número 14 (contándolos físicamente), del
 Visualmente:
 
 <p align="center">
- <img src="Docs/pics/asci_architecture.png"/> 
+ <img src="Docs/pics/arquitectura_ascii.png"/> 
 </p>
 
 La tabla de conversión facilita la conversión para tres modelos de central. Actualmente, dado que hace tiempo que ya no trabajo con ese tipo de equipos, desconozco si solo existen esos tres modelos de central Galaxy o si existen más y solo usabamos esos tres. Cada modelo presenta sus peculiaridades en cuanto a como se enumeran las zonas:
