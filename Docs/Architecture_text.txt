@@ -1,0 +1,78 @@
+[] Central de alarmas
+|_____________________________________________________________...___              Bus 1
+|  |              |              |              |                   |
+|  |              |              |              |                   |
+|  {}8 Zonas en   {}8 zonas en   {}Expansor     {}Expansor          {}Expansor
+|    placa.         placa.         físico 3       físico 4            físico 16     
+|    Expansor       Expansor       Zonas:         Zonas:              Zonas:
+|    lógico 00.     lógico 01.     \\\\\\\\       \\\\\\\\            \\\\\\\\
+|                                  12345678       12345678            12345678
+|
+|_____________________________________________________________...___              Bus 2
+|  |              |              |              |                   |
+|  |              |              |              |                   |
+|  {}Expansor     {}Expansor     {}Expansor     {}Expansor          {}Expansor
+|    físico 1       físico 2       físico 3       físico 4            físico 16     
+|    Zonas:         Zonas:         Zonas:         Zonas:              Zonas:
+|    \\\\\\\\       \\\\\\\\       \\\\\\\\       \\\\\\\\            \\\\\\\\
+|    12345678       12345678       12345678       12345678            12345678
+|
+|_____________________________________________________________...___              Bus 3
+|  |              |              |              |                   |
+|  |              |              |              |                   |
+|  {}Expansor     {}Expansor     {}Expansor     {}Expansor          {}Expansor
+|    físico 1       físico 2       físico 3       físico 4            físico 16     
+|    Zonas:         Zonas:         Zonas:         Zonas:              Zonas:
+|    \\\\\\\\       \\\\\\\\       \\\\\\\\       \\\\\\\\            \\\\\\\\
+|    12345678       12345678       12345678       12345678            12345678
+|
+|_____________________________________________________________...___              Bus 4
+   |              |              |              |                   |
+   |              |              |              |                   |
+   {}Expansor     {}Expansor     {}Expansor     {}Expansor          {}Expansor
+     físico 1       físico 2       físico 3       físico 4            físico 16     
+     Zonas:         Zonas:         Zonas:         Zonas:              Zonas:
+     \\\\\\\\       \\\\\\\\       \\\\\\\\       \\\\\\\\            \\\\\\\\
+     12345678       12345678       12345678       12345678            12345678
+     
+
+[] Alarm System
+|_____________________________________________________________...___              Bus 1
+|  |              |              |              |                   |
+|  |              |              |              |                   |
+|  {}8 sensors    {}8 sensors    {}Physical     {}Physical          {}Physical
+|    in board.      in board.      expansion      expansion           expansion     
+|    Logical        Logical        board 3.       board 4             board 16:
+|    expansion.     expansion      Sensors:       Sensors:            Sensor:
+|    board 00.      board 01.      \\\\\\\\       \\\\\\\\            \\\\\\\\
+|                                  12345678       12345678            12345678
+|
+|_____________________________________________________________...___              Bus 2
+|  |              |              |              |                   |
+|  |              |              |              |                   |
+|  {}Physical     {}Physical     {}Physical     {}Physical          {}Physical
+|    expansion      expansion      expansion      expansion           expansion     
+|    board 1.       board 2.       board 3.       board 4             board 16:
+|    Sensors:       Sensors:       Sensors:       Sensors:            Sensor:
+|    \\\\\\\\       \\\\\\\\       \\\\\\\\       \\\\\\\\            \\\\\\\\
+|    12345678       12345678       12345678       12345678            12345678
+|
+|_____________________________________________________________...___              Bus 3
+|  |              |              |              |                   |
+|  |              |              |              |                   |
+|  {}Physical     {}Physical     {}Physical     {}Physical          {}Physical
+|    expansion      expansion      expansion      expansion           expansion     
+|    board 1.       board 2.       board 3.       board 4             board 16:
+|    Sensors:       Sensors:       Sensors:       Sensors:            Sensor:
+|    \\\\\\\\       \\\\\\\\       \\\\\\\\       \\\\\\\\            \\\\\\\\
+|    12345678       12345678       12345678       12345678            12345678
+|
+|_____________________________________________________________...___              Bus 4
+   |              |              |              |                   |
+   |              |              |              |                   |
+   {}Physical     {}Physical     {}Physical     {}Physical          {}Physical
+     expansion      expansion      expansion      expansion           expansion     
+     board 1.       board 2.       board 3.       board 4             board 16:
+     Sensors:       Sensors:       Sensors:       Sensors:            Sensor:
+     \\\\\\\\       \\\\\\\\       \\\\\\\\       \\\\\\\\            \\\\\\\\
+     12345678       12345678       12345678       12345678            12345678
