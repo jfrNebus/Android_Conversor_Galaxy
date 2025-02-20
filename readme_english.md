@@ -65,13 +65,15 @@ View:
  <img src="Docs/pics/asci_architecture.png"/> 
 </p>
 
-La tabla de conversión facilita la conversión para tres modelos de central. Actualmente, dado que hace tiempo que ya no trabajo con ese tipo de equipos, desconozco si solo existen esos tres modelos de central Galaxy o si existen más y solo usabamos esos tres. Cada modelo presenta sus peculiaridades en cuanto a como se enumeran las zonas:
+The conversion table shows the conversion the IDs conversions for three different systems. Right now I don't know if there are models for this system, since it's been long that I don't work with them. Each model numbers the sensors in different ways.
 
-* CLASSIC: Ofrece la posibilidad de conectar hasta 512 sensores. Nombra los sensores de la forma en la que se ha explicado anteriormente.
-* G2: Solo pueden conectarse 44 sensores. Nombra las zonas del 1 al 4 como se ha explicado anteriormente, del 1001 al 1004. A partir de la quinta zona se da un salto hasta la 1011. De esta forma, la sexta zona será nombrada como 1012, la septima como 1013, y así hasta la zona 12 que se nombra como 1018. De ahí, siguiendo la explicación, la zona 13 se nombrará como 1021, y se seguirá la lógica de nombramiento hasta la última zona posible de la central, la 44, que será la 1058.
-* G3 / Dimension: Ofrece la posibilidad de conectar hasta 512 sensores. Enumera las zonas de forma normal hasta la número 16, es decir, la zona 1018. La zona 1021 que correspondería a la zona 17, en esta central corresponde a la zona 33, y se sigue contando desde ahí. La zona 1022 que correspondería a la zona 18, ahora pasa a corresponder a la zona 34, y de ahí en adelante. De esta forma, en esta central no existen sensores nombrados con la numeración ordinaria del 17 al 32.
+* CLASSIC: Up to 512 sensors, numbered as it's been explained before.
+* G2: Up to 44 sensors. The first 4 sensors are numbered as it was explained before, from 1001 to 1004. The fifth sensor is numbered as 1011. This way, the sixth sensor gets the ID 1012, sensor number 7 gets the ID 1013, and so on till sensor number 12 which gets the ID 1018. From this point and following the background logic used by the system to number the sensors, device number 13 will be numbered as 1021, device 14 get the ID 1022, till the last sensor, the number 44, which will be 1058
+* G3 also known as Dimension: Up to 512 sensors. The first 16 zones are numbered as it was explained before. The first device gets the ID 1001, and the sensor number 16 gets the ID 1018. The ID 1021, which in CLASSIC would belong to the device number 17, in this system belongs to the device number 33, and the count keeps from 33. The ID 1022 now belongs to the device 34 instead to the device 18 as it would happen in CLASSIC. This way, in this system there are no devices numbered by any software from 17 to 32.
 
-Todo esto queda mejor explicado en la propia documentación del código.
+Let's remember that IDs set by the alarm system are in the ranges 1001 to 1158, 2001 to 2158, 3001 to 3158 and 4001 to 4158. IDs set by the software used by the operator, provided by the security company, are in te range 1-512. Therefor, there are no sensors identified by the security company with the numbers 17 to 32 for a Dimension system.
+
+All this can be understood in a better way reading the comments in the code.
  
 <br>
 <br>
