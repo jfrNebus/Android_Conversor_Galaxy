@@ -90,12 +90,14 @@ All this can be understood in a better way reading the comments in the code.
 
 <br>
 
-Como se puede observar, la interfaz de usuario es bien sencilla, aun tengo trabajo por delante en relación al tema de diseño. Lo único que buscaba activamente era que la gama de colores empleada fuese agradable. No quería contrastes altos, texto de color negro sobre fondo blanco, lo cual puede ser molesto para usuarios que padecen ciertos desordenes oculares. Estoy seguro de que habrá gente con daltonismo a la que los colores elegidos les supondrá un problema. Supongo que en un futuro revisaré este campo.
+The user interface is quite simple, I still have to work on it. My main target was to set a confortable color palette. I didn't want high contrast, black text over white background, which can be harmful for users with vision disorders. I am sure that color blind people will still struggle with the colors chose. I guess that I will work on it.
 
-Usar la aplicación es muy sencillo. La idea principal es introducir el número de zona en cualquier formato y que la aplicación te de la conversión en función del tipo de central seleccionada mediante los check boxes del area superior. Si introduces un número de sensor según la numeración que le ha asignado la central, la aplicación entiende que buscas conocer la numeración normal, y viceversa.
+It is really easy to use the app. The user enters the sensor number in any format, and the app reports the ID conversion for that sensor according to the system type selected throught the check boxes in the top area. If the operator enters a sensor ID formated by the alarm system, the app understands that the operator looks for the ordinary name set by the software provided by the security company, and the other way arround.
 
-Los check boxes sirven para que el cálculo de zona respete las peculiaridades de cada central. Como se ha explicado anteriormente, no cuentan de la misma manera.
+The check boxes are meant to select which kind of conversion must be applied over the ID entered by the user, since each sistem has its own way to calculate the conversion.
 
-La opción _Lista_ sirve para que la aplicación ordene en el histórico las zonas introducidas de forma descendente. Esto resulta útil si es necesario copiar el histórico para ser reportado. Adicionalmente, cuando esta opción esté seleccionada no se podrán introducir valores duplicados. Se reportará un mensaje indicando que el número de sensor ya fue introducido. De esta forma se solventa la situación no deseada, descrita anteriormente, relacionada con el chequeo de zonas introducidas cuando se trabaja.
+The option _Lista_ sorts the log of IDs entered in descendending order. This is really useful if the operator needs to report the log, since it can be copied. Aditionally
+
+Adicionalmente, cuando esta opción esté seleccionada no se podrán introducir valores duplicados. Se reportará un mensaje indicando que el número de sensor ya fue introducido. De esta forma se solventa la situación no deseada, descrita anteriormente, relacionada con el chequeo de zonas introducidas cuando se trabaja.
 
 
