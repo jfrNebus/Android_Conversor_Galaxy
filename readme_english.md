@@ -96,8 +96,16 @@ It is really easy to use the app. The user enters the sensor number in any forma
 
 The check boxes are meant to select which kind of conversion must be applied over the ID entered by the user, since each sistem has its own way to calculate the conversion.
 
-The option _Lista_ sorts the log of IDs entered in descendending order. This is really useful if the operator needs to report the log, since it can be copied. Aditionally
+The option _Lista_ sorts the log of IDs entered in descendending order. This is really useful if the operator needs to report the log, since it can be copied. Aditionally, the log won't accept duplicated entries, it will report an error message. This way, the situation described above about checking the table and scrolling up and down constantly is avoided.
 
-Adicionalmente, cuando esta opción esté seleccionada no se podrán introducir valores duplicados. Se reportará un mensaje indicando que el número de sensor ya fue introducido. De esta forma se solventa la situación no deseada, descrita anteriormente, relacionada con el chequeo de zonas introducidas cuando se trabaja.
+<br>
+
+## **Code explanation :thinking:**
+
+The code is explained in the comments, in the files inside the "commented" folder. I programmed and commented everything few years ago. I didn't check it again and I am sure that now I could fix and clean most part of the code, as well as I could make new documentation to explain the whole code. Right now I have no time since I am quite bussy, so for now, bear with me, I was less experienced back then.
+
+<p align="center">
+    <a href=commented"><img src="https://img.shields.io/badge/Commented%20code-8f529e?style=plastic"/></a>
+</p>
 
 
