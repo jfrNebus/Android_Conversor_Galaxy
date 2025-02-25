@@ -1,6 +1,4 @@
-Documentation to be translated.
-
-# Introduction
+# Introduction :wave:
 
 A few years ago I had to work with the alarm systems _Galaxy Dimension_ from _HoneyWell_. It's been quite long time since I worked with them and I might have forgotten some of their specs, but here are the reassons for me to make this app.
 
@@ -24,7 +22,7 @@ Both situations made a no sense to me. Because of this I thought that it could b
 <br>
 <br>
 
-## Funcionamiento 🧰
+## **Working principle 🧰**
 
 <br>
 
@@ -32,36 +30,31 @@ Let's start by understanding how the system numbers the sensors. The system has 
 
 Each expansion board allows to adding up to 8 sensors to the system. Therefore, in order to have 26 sensors added to the system 2 expansion boards are needed. The main system hosts 16 sensors, the first expansion board hosts the next 8 devices, and the second expansion board hosts the last 2 sensors. Each bus can host a maximum of 16 groups of 8 sensors, totaling 128 sensors. Finally, a system can have up to 4 buses depending to the model of the system. A system with 4 buses can host a total of 512 sensors.
 
+It is really important to know how the architecture of the system works in order to locate breakdowns, test the system etc. If the system reports a fault in the expansion board 4 on the first bus, and you know that the first bus is located throughout the west side of the protected area, it is easier to identify and fix the problem, especially if it is your first time in the area.
 
-Continua por aquí
-
-
-
-It is really important to know how the architecture of the system works in order to locate breakdowns, test system etc. If the system reports a fault in the expansion board 4 in the first bus, and you know that the first bus is located all over the west side of the area to protect, it is easier to identify and fix the problem, especially if it is your first time in the area.
-
-The system numbers the sensor in a way that it is really helpful for the operator to know all the information related to a sensor. Below there are some examples:
+The system numbers the sensors in a way that it is really helpful for the operator to know all the information related to a sensor. Below are some examples:
 
 
 Sensor 2036:
 * Bus: 2
-* Expansion board: 03 -> The count starts at 0. The first expansion board is the numer 00, the second expansion board is the number 01, the third one is the numer 02, the forth one is the numer 03.
+* Expansion board: 03 -> The count starts at 0. The first expansion board is the number 00, the second expansion board is the number 01, the third one is the number 02, the forth one is the number 03.
 * Number of sensor: 6 -> The sixth sensor of the expansion board.
 
-Summary: Sixth sensor in the forth expansor board, in the second bus.
+Summary: Sixth sensor in the fourth expansor board, in the second bus.
 
 Sensor 1014:
 * Bus: 1
-* Expansion board: 01 -> As it's been explained, the system board has screwed connectors for the first 16 sensors hosted by the bus number 1. Therefore the first 8 sensors belong to the first built-in "expansor board" in the system, the expansion board number 00. The next 8 sensors, sensor 9 to sensor 16, belong to the second built-in "expansor board" in the system, the number 01.
-* Number of sensor: 4 -> The forth sensor of the expansion board.
+* Expansion board: 01 -> As has been explained, the system board has screw connectors for the first 16 sensors hosted by bus number 1. Therefore the first 8 sensors belong to the first built-in "expansion board" in the system, the expansion board number 00. The next 8 sensors, sensors 9 to 16, belong to the second built-in "expansion board" in the system, the number 01.
+* Number of sensor: 4 -> The fourth sensor of the expansion board.
 
-Summary: Forth sensor in the second expansor, in the first bus.
+Summary: Fourth sensor in the second expansion board, in the first bus.
 
 Sensor 3138:
 * Bus: 3
-* Expansion board: 13 -> Physical expansor board number 14, logical expansor number 13.
+* Expansion board: 13 -> Physical expansion board number 14, logical expansion number 13.
 * Number of sensor 8: -> The eighth sensor of the expansion board.
 
-Summary: Eighth sensor in the expansion board number 14, (physical count), in the third bus.
+Summary: Eighth sensor in the expansion board number 14 (physical count), in the third bus.
 
 
 View:
@@ -70,20 +63,20 @@ View:
  <img src="Docs/pics/asci_architecture.png"/> 
 </p>
 
-The conversion table shows the conversion the IDs conversions for three different systems. Right now I don't know if there are models for this system, since it's been long that I don't work with them. Each model numbers the sensors in different ways.
+The conversion table shows the conversion the ID conversions for three different systems. Right now I don't know if there are more models for this system, since it's been a long time since I worked with them. Each model numbers the sensors in different ways.
 
-* CLASSIC: Up to 512 sensors, numbered as it's been explained before.
-* G2: Up to 44 sensors. The first 4 sensors are numbered as it was explained before, from 1001 to 1004. The fifth sensor is numbered as 1011. This way, the sixth sensor gets the ID 1012, sensor number 7 gets the ID 1013, and so on till sensor number 12 which gets the ID 1018. From this point and following the background logic used by the system to number the sensors, device number 13 will be numbered as 1021, device 14 get the ID 1022, till the last sensor, the number 44, which will be 1058
-* G3 also known as Dimension: Up to 512 sensors. The first 16 zones are numbered as it was explained before. The first device gets the ID 1001, and the sensor number 16 gets the ID 1018. The ID 1021, which in CLASSIC would belong to the device number 17, in this system belongs to the device number 33, and the count keeps from 33. The ID 1022 now belongs to the device 34 instead to the device 18 as it would happen in CLASSIC. This way, in this system there are no devices numbered by any software from 17 to 32.
+* CLASSIC: Up to 512 sensors, numbered as explained before.
+* G2: Up to 44 sensors. The first 4 sensors are numbered as explained before, from 1001 to 1004. The fifth sensor is numbered as 1011. This way, the sixth sensor gets the ID 1012, sensor number 7 gets the ID 1013, and so on until sensor number 12 which gets the ID 1018. From this point and following the same logic used by the system to number the sensors, device number 13 will be numbered as 1021, device 14 gets the ID 1022, untill the last sensor, sensor number 44, which will be 1058
+* G3, also known as Dimension: Up to 512 sensors. The first 16 zones are numbered as explained before. The first device gets the ID 1001, and sensor number 16 gets the ID 1018. The ID 1021, which in CLASSIC would belong to sensor number 17, in this system belongs to sensor number 33, and the count continues from 33. The ID 1022 now belongs to sensor 34 instead of sensor 18 as it would in CLASSIC. This way, in this system there are no sensors numbered from 17 to 32 by any software.
 
-Let's remember that IDs set by the alarm system are in the ranges 1001 to 1158, 2001 to 2158, 3001 to 3158 and 4001 to 4158. IDs set by the software used by the operator, provided by the security company, are in te range 1-512. Therefor, there are no sensors identified by the security company with the numbers 17 to 32 for a Dimension system.
+Let's remember that IDs set by the alarm system are in the ranges 1001 to 1158, 2001 to 2158, 3001 to 3158 and 4001 to 4158. IDs set by the software used by the operator, provided by the security company, are in the range 1-512. Therefore, there are no sensors identified by the security company with the numbers 17 to 32 for a Dimension system.
 
-All this can be understood in a better way reading the comments in the code.
+All this can be understood better by reading the comments in the code.
  
 <br>
 <br>
 
-## Aplicación 🧰
+## **App :iphone:**
 
 <br>
 
@@ -95,19 +88,19 @@ All this can be understood in a better way reading the comments in the code.
 
 <br>
 
-The user interface is quite simple, I still have to work on it. My main target was to set a confortable color palette. I didn't want high contrast, black text over white background, which can be harmful for users with vision disorders. I am sure that color blind people will still struggle with the colors chose. I guess that I will work on it.
+The user interface is quite simple, but I still have to work on it. My main target was to set a comfortable color palette. I didn't want a high contrast, black text over a white background, which can be harmful for users with vision disorders. I am sure that color-blind people will still struggle with the colors chosen. I guess that I will work on it.
 
-It is really easy to use the app. The user enters the sensor number in any format, and the app reports the ID conversion for that sensor according to the system type selected throught the check boxes in the top area. If the operator enters a sensor ID formated by the alarm system, the app understands that the operator looks for the ordinary name set by the software provided by the security company, and the other way arround.
+It is really easy to use the app. The user enters the sensor number in any format, and the app reports the ID conversion for that sensor according to the system type selected through the checkboxes in the top area. If the operator enters a sensor ID formatted by the alarm system, the app understands that the operator is looking for the ordinary name set by the software provided by the security company, and the other way around.
 
-The check boxes are meant to select which kind of conversion must be applied over the ID entered by the user, since each sistem has its own way to calculate the conversion.
+The check boxes are meant to select which kind of conversion must be applied over the ID entered by the user, since each system has its own way to calculate the conversion.
 
-The option _Lista_ sorts the log of IDs entered in descendending order. This is really useful if the operator needs to report the log, since it can be copied. Aditionally, the log won't accept duplicated entries, it will report an error message. This way, the situation described above about checking the table and scrolling up and down constantly is avoided.
+The option _Lista_ sorts the log of IDs entered in descending  order. This is really useful if the operator needs to report the log, since it can be copied. Additionally, the log won't accept duplicated entries, it will report an error message. This way, the situation described above about checking the table and scrolling up and down constantly is avoided.
 
 <br>
 
-## **Code explanation :thinking:**
+## **Code explanation :bulb:**
 
-The code is explained in the comments, in the files inside the "commented" folder. I programmed and commented everything few years ago. I didn't check it again and I know that now I could fix and clean most part of the code, I could delete several useless files, as well as I could make new documentation to explain the whole code. Right now I have no time since I am quite bussy, so for now, bear with me, I was less experienced back then.
+The code is explained as comments, in the files inside the "commented" folder. I programmed and commented everything a few years ago. I didn't check it again and I know that now I could fix and clean most of the code, I could delete several useless files, as well as create new documentation to explain the whole code. Right now I have no time since I am quite busy, so for now, bear with me; I was less experienced back then.
 
 <br>
 
