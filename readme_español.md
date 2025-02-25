@@ -1,4 +1,4 @@
-# Introducción
+# Introducción :wave:
 
 Hubo un momento en el pasado en el que tuve que trabajar con las central de alarmas de intrusión _Galaxy Dimension_, de la marca _HoneyWell_. El tiempo ha hecho que se me hayan olvidado ciertos conceptos e información de la misma, pues hace tiempo que ya no trabajo con estos equipos, pero aquí va el origen de esta aplicación.
 
@@ -18,7 +18,7 @@ Estas dos situaciones, a mi parecer, eran un sin sentido. En ese momento pensé 
 <br>
 <br>
 
-## Funcionamiento 🧰
+## **Funcionamiento 🧰**
 
 <br>
 
@@ -72,7 +72,7 @@ Todo esto queda mejor explicado en la propia documentación del código.
 <br>
 <br>
 
-## Aplicación 🧰
+## **Aplicación :iphone:++
 
 <br>
 
@@ -92,3 +92,16 @@ Los check boxes sirven para que el cálculo de zona respete las peculiaridades d
 
 La opción _Lista_ sirve para que la aplicación ordene en el histórico las zonas introducidas de forma descendente. Esto resulta útil si es necesario copiar el histórico para ser reportado. Adicionalmente, cuando esta opción esté seleccionada no se podrán introducir valores duplicados. Se reportará un mensaje indicando que el número de sensor ya fue introducido. De esta forma se solventa la situación no deseada, descrita anteriormente, relacionada con el chequeo de zonas introducidas cuando se trabaja.
 
+<br>
+
+## **Explicación del código :bulb:**
+
+El código está explicado en forma de comentarios, en los archivos dentro de la carpeta "commented". Programé y comenté todo el código hace algunos años. No lo he vuelto a revisar desde entonces, pero estoy seguro de que podría corregir y limiar la mayor parte del código, podría borrar algunos archivos y elementos que no tienen utilidad, y podría crear una nueva documentación para explicar el código. Adicionalmente, en su momento documenté la explicación en inglés porque quería que la entendiese alguien que no habla Español.
+
+Ahora mismo no tengo tiempo, estoy bastante ocupado, así que por el momento, tened paciencia conmigo; tenía menos experiencia por entonces-
+
+<br>
+
+<p align="center">
+    <a href="commented/app/src/main/java/com/gps/conversorgalaxy/MainActivity.java"><img src="https://img.shields.io/badge/Commented%20code-8f529e?style=plastic"/></a>
+</p>
