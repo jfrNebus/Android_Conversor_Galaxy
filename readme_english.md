@@ -104,6 +104,8 @@ The option _Lista_ sorts the log of IDs entered in descendending order. This is 
 
 The code is explained in the comments, in the files inside the "commented" folder. I programmed and commented everything few years ago. I didn't check it again and I am sure that now I could fix and clean most part of the code, as well as I could make new documentation to explain the whole code. Right now I have no time since I am quite bussy, so for now, bear with me, I was less experienced back then.
 
+<br>
+
 <p align="center">
     <a href=commented"><img src="https://img.shields.io/badge/Commented%20code-8f529e?style=plastic"/></a>
 </p>
