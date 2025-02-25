@@ -100,7 +100,7 @@ The option _Lista_ sorts the log of IDs entered in descending  order. This is re
 
 ## **Code explanation :bulb:**
 
-The code is explained as comments, in the files inside the "commented" folder. I programmed and commented everything a few years ago. I didn't check it again and I know that now I could fix and clean most of the code, I could delete several useless files, as well as create new documentation to explain the whole code. Right now I have no time since I am quite busy, so for now, bear with me; I was less experienced back then.
+The code is explained in the comments, in the files inside the "commented" folder. I programmed and commented everything a few years ago. I haven't checked it again since then, but I am sure that now I could fix and clean most of the code, I could delete several useless files, as well as create new documentation to explain the whole code. Right now I have no time since I am quite busy, so for now, bear with me; I was less experienced back then.
 
 <br>
 
