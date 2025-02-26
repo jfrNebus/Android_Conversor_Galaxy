@@ -11,9 +11,9 @@ Esta aplicación surge de la necesidad de mejorar el rendimiento de trabajo para
 
 Esta dinámica de trabajo genera un inconveniente notable. ¿Qué pasa si tu compañero y tú no estáis solos en la instalación mientras probáis todo el sistema? Ocurrirá que habrá sensores que se activen más de una vez debido al paso del personal de la instalación, o de los clientes que acuden a dicha instalación. Esto hace que el historial de señales se llene de los reportes de aquellos sensores que estén en las zonas más transitadas de la instalación. En este caso, cuando se está revisando todo el historial y anotando los sensores probados con éxito, la frase más recurrente es: "¿Te he dicho ya la zona X?" donde X es el número de un sensor, (se denomina "zona" a cada uno de los sensores del sistema). Esto te obliga a perder tiempo revisando el documento para saber si ya lo clasificaste como _probada_, porque es posible que no lo recuerdes si la instalación tiene muchos sensores.
 
-Otro inconveniente notable es el de buscar cada zona en la tabla de conversión. Mas adelante en este documento se explicará cómo numera el sistema cada zona, por ahora solo decir que estos sistemas pueden contar con zonas cuya numeración va del 1001 al 1158, del 2001 al 2158, del 3001 al 3158, y del 4001 al 4158. Como la numeración depende de cómo se hayan cubierto las necesidades de seguridad de la instalación, en el historial de señales, tras haber probado el sistema, podemos encontrar reportes de una zona cuya numeración se encuentra  en el rango de 1001 a 1158, seguida de otra zona en el rango de 3001 a 3158, y a continuación otra en cualquier otro rango. Cuando se está revisando el historial, comprobar la tabla de conversión se traduce en un constante proceso de buscar X zona en el documento en su rango adecuado, lugo pasar X número de páginas para buscar la siguiente en su rango, etc.
+Otro inconveniente notable es el de buscar cada zona en la tabla de conversión. Más adelante en este documento se explicará cómo numera el sistema cada zona, pero por ahora solo diremos que estos sistemas pueden contar con zonas cuya numeración va del 1001 al 1158, del 2001 al 2158, del 3001 al 3158, y del 4001 al 4158. Como la numeración depende de cómo se hayan cubierto las necesidades de seguridad de la instalación, en el historial de señales, tras haber probado el sistema, podemos encontrar reportes de una zona cuya numeración se encuentra  en el rango de 1001 a 1158, seguida de otra zona en el rango de 3001 a 3158, y a continuación otra en cualquier otro rango. Cuando se está revisando el historial, comprobar la tabla de conversión se traduce en un constante proceso de buscar X zona en el documento en su rango adecuado, luego pasar X número de páginas para buscar la siguiente en su rango, etc.
 
-Estas dos situaciones, a mi parecer, eran un sin sentido. En ese momento pensé que sería sencillo hacer una aplicación que te devuelva el número zona ya convertido, en función del tipo de central. Adicionalmente, podría añadirle un modo de funcionamiento que te reporte si ya introduciste una zona en concreto. De está forma, tendrías acceso a la conversión de la zona de forma rápida y podrías saber si ya comprobaste su estado con anterioridad. Esto eliminaría el constante scroll tanto en el archivo de control donde apuntamos cada zona que ha sido probada, como en la tabla de conversión.
+Estas dos situaciones, a mi parecer, eran un sinsentido. En ese momento pensé que sería sencillo hacer una aplicación que te devuelva el número de zona ya convertido, en función del tipo de central. Adicionalmente, podría añadirle un modo de funcionamiento que te permitiera conocer si ya introduciste una zona en concreto. De esta forma, tendrías acceso a la conversión de la zona de forma rápida y podrías saber si ya comprobaste su estado con anterioridad. Esto eliminaría el constante scroll tanto en el archivo de control donde apuntamos cada zona que ha sido probada, como en la tabla de conversión.
 
 <br>
 <br>
@@ -22,26 +22,26 @@ Estas dos situaciones, a mi parecer, eran un sin sentido. En ese momento pensé 
 
 <br>
 
-Vamos a empezar entendiendo cómo nombra la central de alarmas sus zonas. La central tiene clemas de conexión para 16 zonas, es decir, puedes conectar a la central 16 sensores. Si se necesitan más sensores se han de agragar ríos y placas expansoras. Se denomina río a la conexión por bus de datos de diferentes elementos que envían y/o reciben información. Una plca expansora, una placa que te permite ampliar X número de sensores, se comunica con la central a través de un río, un bus de comunicaciones, en este caso del tipo RS-485. Esta situación genera que, si necesitas 26 zonas en una central de tipo _Galaxy Classic_, (más adelante veremos los tipos de centrales Galaxy con las que se trabaja), vas a necesitar la central y un total de 2 expansores.
+Vamos a empezar entendiendo cómo nombra la central de alarmas sus zonas. La central tiene clemas de conexión para 16 zonas, es decir, puedes conectar a la central 16 sensores. Si se necesitan más sensores, se han de agregar ríos y placas expansoras. Se denomina "río" a la conexión por bus de datos de diferentes elementos que envían y/o reciben información. Una placa expansora, una placa que te permite ampliar X número de sensores, se comunica con la central a través de un río, un bus de comunicaciones, en este caso del tipo RS-485. Esta situación genera que, si necesitas 26 zonas en una central de tipo _Galaxy Classic_, (más adelante veremos los tipos de centrales Galaxy con las que se trabaja), vas a necesitar la central y un total de 2 expansores.
 
-Cada expansor permite agregar un total de 8 zonas. Si al total de 26 zonas del ejemplo anterior, le restamos las 16 que permite agregar la propia central usando el primer bus, nos quedan 10 zonas, por eso se necesitan 2 expansores. Se acomodan 8 de esas 10 zonas en un expansor, y las 2 últimas en el segundo. Cada bus puede contar con un total de 16 conjuntos de 8 zonas, lo que da un total de 128 zonas por bus. Por último, cada central puede contar, según el modelo, con un total de 4 buses. Esto hace posible que se puedan llegar a tener 512 sensores en una instalación. 
+Cada expansor permite agregar un total de 8 zonas. Si al total de 26 zonas del ejemplo anterior, le restamos las 16 que permite agregar la propia central usando el primer bus, nos quedan 10 zonas, por eso se necesitan 2 expansores. Se acomodan 8 de esas 10 zonas en un expansor, y las 2 últimas en el segundo. Cada bus puede contar con un total de 16 conjuntos de 8 zonas, lo que da un total de 128 zonas por bus. Por último, cada central puede contar, según el modelo, con un total de 4 buses. Esto hace posible que se puedan llegar a tener hasta 512 sensores en una instalación. 
 
-Conocer cómo se estructura la arquitectura de conexiones de la central es de vital importancia a la hora de detectar averías, probar el sistema etc. Si tienes una avería en el río 10 del bus 4, y sabes que el bus 4 se encuentra en el lado norte de la instalación, será mucho más fácil localizar las placas relacionadas con la incidencia, especialmente si es la primera vez que acudes a la instalación.
+Conocer cómo se estructura la arquitectura de conexiones de la central es de vital importancia a la hora de detectar averías, probar el sistema, etcétera. Si tienes una avería en el río 10 del bus 4, y sabes que el bus 4 se encuentra en el lado norte de la instalación, será mucho más fácil localizar las placas relacionadas con la incidencia, especialmente si es la primera vez que acudes a la instalación.
 
-Explicado todo esto, destaca muchisimo lo acertadamente que plasma toda esta información la central en los números identificadores de las zonas. Voy a extender algunos ejemplos y va a quedar completamente claro.
+Explicado todo esto, destaca muchísimo lo acertadamente que plasma toda esta información la central en los números identificadores de las zonas. Voy a extender algunos ejemplos y quedará completamente claro.
 
 
 
 Zona 2036:
 * Bus: 2
-* Expansor: 03 -> Empezamos a contar desde cero, luego el expansor 00 sería el primer expansor del bus, el expansor 01 sería el segundo, el 02 sería el tercero, y el 03 sería el cuarto.
+* Expansor: 03 -> Empezamos a contar desde cero, por lo tanto, el expansor 00 sería el primer expansor del bus, el expansor 01 sería el segundo, el 02 sería el tercero, y el 03 sería el cuarto.
 * Número de zona: 6 -> Esto quiere decir que se trata del sexto sensor del expansor.
 
 Resumen: Estamos hablando del sexto sensor, del cuarto expansor, del segundo bus de la central.
 
 Zona 1014:
 * Bus: 1
-* Expansor: 01 -> Cómo se ha indicado, la placa de la central tiene conexiones para las primeras 16 zonas del bus número 1. Luego, las zonas 1 a 8 forman el primer "expansor" built-in en la placa de la central, el expansor 00. Las siguientes 8 zonas forman el 
+* Expansor: 01 -> Como se ha indicado, la placa de la central tiene conexiones para las primeras 16 zonas del bus número 1. Por lo tanto, las zonas 1 a 8 forman el primer "expansor" integrado en la placa de la central, el expansor 00. Las siguientes 8 zonas forman el 
  segundo "expansor", el 01.
 * Número de zona: 4 -> Cuarto sensor del expansor.
 
@@ -50,9 +50,19 @@ Resumen: Cuarto sensor, del segundo expansor, del primer bus de la central.
 Zona 3138:
 * Bus: 3
 * Expansor: 13 -> Expansor físico número 14, expansor lógico número 13.
-* Numero de zona: Octavo sensor de expansor.
+* Número de zona: Octavo sensor del expansor.
 
 Resumen: Octavo sensor, del expansor número 14 (contándolos físicamente), del bus 3.
+
+
+
+
+
+Continúa por aquí
+
+
+
+
 
 
 Visualmente:
