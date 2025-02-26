@@ -54,27 +54,16 @@ Zona 3138:
 
 Resumen: Octavo sensor, del expansor número 14 (contándolos físicamente), del bus 3.
 
-
-
-
-
-Continúa por aquí
-
-
-
-
-
-
 Visualmente:
 
 <p align="center">
  <img src="Docs/pics/arquitectura_ascii.png"/> 
 </p>
 
-La tabla de conversión facilita la conversión para tres modelos de central. Actualmente, dado que hace tiempo que ya no trabajo con ese tipo de equipos, desconozco si solo existen esos tres modelos de central Galaxy o si existen más y solo usabamos esos tres. Cada modelo presenta sus peculiaridades en cuanto a como se enumeran las zonas:
+La tabla de conversión facilita la conversión para tres modelos de central. Actualmente, dado que hace tiempo que ya no trabajo con ese tipo de equipos, desconozco si solo existen esos tres modelos de central Galaxy o si existen más y solo usábamos esos tres. Cada modelo presenta sus peculiaridades en cuanto a cómo se enumeran las zonas:
 
 * CLASSIC: Ofrece la posibilidad de conectar hasta 512 sensores. Nombra los sensores de la forma en la que se ha explicado anteriormente.
-* G2: Solo pueden conectarse 44 sensores. Nombra las zonas del 1 al 4 como se ha explicado anteriormente, del 1001 al 1004. A partir de la quinta zona se da un salto hasta la 1011. De esta forma, la sexta zona será nombrada como 1012, la septima como 1013, y así hasta la zona 12 que se nombra como 1018. De ahí, siguiendo la explicación, la zona 13 se nombrará como 1021, y se seguirá la lógica de nombramiento hasta la última zona posible de la central, la 44, que será la 1058.
+* G2: Solo pueden conectarse 44 sensores. Nombra las zonas del 1 al 4 como se ha explicado anteriormente, del 1001 al 1004. A partir de la quinta zona se da un salto hasta la 1011. De esta forma, la sexta zona será nombrada como 1012, la séptima como 1013, y así hasta la zona 12 que se nombra como 1018. De ahí, siguiendo la explicación, la zona 13 se nombrará como 1021, y se seguirá la lógica de nombramiento hasta la última zona posible de la central, la 44, que será la 1058.
 * G3 / Dimension: Ofrece la posibilidad de conectar hasta 512 sensores. Enumera las zonas de forma normal hasta la número 16, es decir, la zona 1018. La zona 1021 que correspondería a la zona 17, en esta central corresponde a la zona 33, y se sigue contando desde ahí. La zona 1022 que correspondería a la zona 18, ahora pasa a corresponder a la zona 34, y de ahí en adelante. De esta forma, en esta central no existen sensores nombrados con la numeración ordinaria del 17 al 32.
 
 Todo esto queda mejor explicado en la propia documentación del código.
@@ -94,11 +83,11 @@ Todo esto queda mejor explicado en la propia documentación del código.
 
 <br>
 
-Como se puede observar, la interfaz de usuario es bien sencilla, aun tengo trabajo por delante en relación al tema de diseño. Lo único que buscaba activamente era que la gama de colores empleada fuese agradable. No quería contrastes altos, texto de color negro sobre fondo blanco, lo cual puede ser molesto para usuarios que padecen ciertos desordenes oculares. Estoy seguro de que habrá gente con daltonismo a la que los colores elegidos les supondrá un problema. Supongo que en un futuro revisaré este campo.
+Como se puede observar, la interfaz de usuario es bien sencilla, aún tengo trabajo por delante en relación al tema de diseño. Lo único que buscaba activamente era que la gama de colores empleada fuese agradable. No quería contrastes altos, texto de color negro sobre fondo blanco, lo cual puede ser molesto para usuarios que padecen ciertos trastornos oculares. Estoy seguro de que habrá gente con daltonismo a la que los colores elegidos les supondrán un problema. Supongo que en un futuro revisaré este campo.
 
-Usar la aplicación es muy sencillo. La idea principal es introducir el número de zona en cualquier formato y que la aplicación te de la conversión en función del tipo de central seleccionada mediante los check boxes del area superior. Si introduces un número de sensor según la numeración que le ha asignado la central, la aplicación entiende que buscas conocer la numeración normal, y viceversa.
+Usar la aplicación es muy sencillo. La idea principal es introducir el número de zona en cualquier formato y que la aplicación dé la conversión en función del tipo de central seleccionada mediante los checkboxes del área superior. Si introduces un número de sensor según la numeración que le ha asignado la central, la aplicación entiende que buscas conocer la numeración normal, y viceversa.
 
-Los check boxes sirven para que el cálculo de zona respete las peculiaridades de cada central. Como se ha explicado anteriormente, no cuentan de la misma manera.
+Los checkboxes sirven para que el cálculo de zona respete las peculiaridades de cada central. Como se ha explicado anteriormente, no cuentan de la misma manera.
 
 La opción _Lista_ sirve para que la aplicación ordene en el histórico las zonas introducidas de forma descendente. Esto resulta útil si es necesario copiar el histórico para ser reportado. Adicionalmente, cuando esta opción esté seleccionada no se podrán introducir valores duplicados. Se reportará un mensaje indicando que el número de sensor ya fue introducido. De esta forma se solventa la situación no deseada, descrita anteriormente, relacionada con el chequeo de zonas introducidas cuando se trabaja.
 
@@ -106,7 +95,7 @@ La opción _Lista_ sirve para que la aplicación ordene en el histórico las zon
 
 ## **Explicación del código :bulb:**
 
-El código está explicado en forma de comentarios, en los archivos dentro de la carpeta "commented". Programé y comenté todo el código hace algunos años. No lo he vuelto a revisar desde entonces, pero estoy seguro de que podría corregir y limiar la mayor parte del código, podría borrar algunos archivos y elementos que no tienen utilidad, y podría crear una nueva documentación para explicar el código. Adicionalmente, en su momento documenté la explicación en inglés porque quería que la entendiese alguien que no habla Español.
+El código está explicado en forma de comentarios, en los archivos dentro de la carpeta "commented". Programé y comenté todo el código hace algunos años. No lo he vuelto a revisar desde entonces, pero estoy seguro de que podría corregir y limpiar la mayor parte del código, borrar algunos archivos y elementos que no tienen utilidad, y podría crear una nueva documentación para explicar el código. Adicionalmente, en su momento documenté la explicación en inglés porque quería que la entendiese alguien que no hablaba Español.
 
 Ahora mismo no tengo tiempo, estoy bastante ocupado, así que por el momento, tened paciencia conmigo; tenía menos experiencia por entonces.
 
