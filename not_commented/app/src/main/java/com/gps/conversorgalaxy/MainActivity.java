@@ -201,12 +201,12 @@ public class MainActivity extends AppCompatActivity {
                 } else if (selectedConversion.equals("normal") && ((8 < i) && (i < 49))) {
                     modifier = 4;
                 } else {
-                    modifier = (int) -i;
+                    modifier = -i;
                 }
                 break;
             case " - Dimension: ":
                 if (((16 < i) && (i < 33)) && selectedConversion.equals("galaxy"))
-                    modifier = (int) -i;
+                    modifier = -i;
                 else if ((16 < i) && (i < 529))
                     modifier = -16;
                 else

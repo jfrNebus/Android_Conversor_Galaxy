@@ -3,14 +3,21 @@ plugins {
 }
 
 android {
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.gps.conversorgalaxy"
         minSdk 16
-        targetSdk 34
-        versionCode 6
-        versionName "1.5"
+        //noinspection EditedTargetSdkVersion
+        targetSdk 35
+        /*
+        versionCode 7 and versionName 1.5.1 were rejected by Google
+        because they thought that the main screen of the app was a
+        loging wall and they requested me to send them user and
+        password to fully check it.
+         */
+        versionCode 8
+        versionName "1.5.1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
