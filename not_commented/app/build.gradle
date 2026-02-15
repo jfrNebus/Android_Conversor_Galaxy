@@ -13,11 +13,16 @@ android {
         /*
         versionCode 7 and versionName 1.5.1 were rejected by Google
         because they thought that the main screen of the app was a
-        loging wall and they requested me to send them user and
+        logging wall and they requested me to send them user and
         password to fully check it.
+
+        Version 8 was numbered as 1.5.1.1. Version 9 will be numberded as
+        1.5.1.2. Since the last number in a version 1.5.1, is the one that
+        refers to bug fixing, and there's no bug in this app, from now
+        all the new versions will be numbered as 1.5.1.X.
          */
-        versionCode 8
-        versionName "1.5.1.1"
+        versionCode 9
+        versionName "1.5.1.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
